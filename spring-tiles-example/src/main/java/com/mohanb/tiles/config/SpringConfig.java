@@ -29,7 +29,7 @@ public class SpringConfig extends WebMvcConfigurerAdapter {
 		UrlBasedViewResolver resolver = new UrlBasedViewResolver();
 		resolver.setViewClass(TilesView.class);
 
-		log.debug("internal resource view resolver initialized 1");
+		log.debug(">>>>>>>>>>>>>>>>>internal resource view resolver initialized 1");
 		return resolver;
 	}
 
@@ -38,7 +38,7 @@ public class SpringConfig extends WebMvcConfigurerAdapter {
 		TilesConfigurer configurer = new TilesConfigurer();
 		configurer.setDefinitions("/WEB-INF/tiles.xml");
 
-		log.debug("tiles configurer initialized");
+		log.debug(">>>>>>>>>>>>>>>>>tiles configurer initialized");
 		return configurer;
 	}
 
